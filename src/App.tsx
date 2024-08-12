@@ -48,7 +48,21 @@ function App() {
   }, [page, per_page, q, sort, order]);
 
   if (isError) {
-    alert("при загрузке данных произошла ошибка!");
+    return (
+      <div
+        style={{
+          height: "517px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          fontSize: "26px",
+          fontWeight: "400",
+          color: "#4f4f4f",
+        }}
+      >
+        При загрузке произошла ошибка, пожалуйста, попробуйте позже
+      </div>
+    );
   }
 
   return (
