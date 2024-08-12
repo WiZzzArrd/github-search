@@ -1,0 +1,32 @@
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: #00838f;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-left: 32px;
+  margin-bottom: 24px;
+
+  .input::placeholder {
+    color: #828282;
+    font-style: italic;
+    font-weight: 400;
+    size: 14px;
+  }
+
+  input {
+    width: 63.4%;
+    border-radius: 4px;
+    height: 42px;
+    padding: 16px 9px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+  }
+
+  .input:focus {
+    border: 1px solid rgb(0, 0, 0);
+  }
+}
